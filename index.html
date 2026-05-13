@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allo Pressing | Expert en Tapis à Meknès</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root {
+            --sky-blue: #00B4D8;
+            --dark-blue: #03045E;
+            --glass: rgba(255, 255, 255, 0.7);
+        }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 1.5rem;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--sky-blue) 100%);
+        }
+
+        .before-after-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: var(--sky-blue); border-radius: 10px; }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-4 px-4">
+        <div class="max-w-7xl mx-auto glass-card px-6 py-4 flex justify-between items-center shadow-lg">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-[#03045E] rounded-lg flex items-center justify-center text-white">
+                    <i data-lucide="waves"></i>
+                </div>
+                <span class="text-xl font-bold text-[#03045E]">Allo Pressing</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-medium">
+                <a href="#services" class="hover:text-[#00B4D8] transition">Services</a>
+                <a href="#process" class="hover:text-[#00B4D8] transition">Comment ça marche</a>
+                <a href="#faq" class="hover:text-[#00B4D8] transition">FAQ</a>
+            </div>
+            <a href="tel:+212000000000" class="bg-[#03045E] text-white px-5 py-2 rounded-full font-semibold hover:bg-opacity-90 transition">
+                Commander
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-6 hero-gradient text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <span class="bg-white/20 px-4 py-1 rounded-full text-sm font-medium mb-6 inline-block">N°1 à Meknès</span>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Vos tapis retrouvent leur <span class="text-sky-200">éclat d'origine.</span>
+                </h1>
+                <p class="text-lg text-blue-50 mb-8 max-w-lg">
+                    Service professionnel de nettoyage de tapis avec collecte et livraison gratuite à domicile partout à Meknès.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-white text-[#03045E] px-8 py-4 rounded-xl font-bold shadow-xl hover:scale-105 transition">
+                        Réserver un ramassage
+                    </button>
+                    <button class="border-2 border-white/30 px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition">
+                        Nos tarifs
+                    </button>
+                </div>
+            </div>
+            <div class="relative" data-aos="zoom-in">
+                <div class="glass-card p-4 relative z-10">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800" alt="Nettoyage Tapis" class="rounded-xl shadow-inner">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl z-20 hidden md:block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-green-100 p-3 rounded-full text-green-600"><i data-lucide="check-circle"></i></div>
+                        <div>
+                            <p class="text-slate-400 text-xs uppercase font-bold">Temps de séchage</p>
+                            <p class="text-[#03045E] font-bold">Moins de 24h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trusted Section -->
+    <section class="py-12 border-b bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-slate-400 font-semibold mb-8 uppercase tracking-widest text-sm">Ils nous font confiance</p>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                <span class="text-2xl font-bold italic">Riad Meknès</span>
+                <span class="text-2xl font-bold italic">Hotel Volubilis</span>
+                <span class="text-2xl font-bold italic">Palais Didi</span>
+                <span class="text-2xl font-bold italic">Meknes Plaza</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#03045E] mb-4">Nos Services Spécialisés</h2>
+                <div class="w-20 h-1 bg-[#00B4D8] mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 hover:translate-y-[-10px] transition group" data-aos="fade-up">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-[#03045E] mb-6 group-hover:bg-[#03045E] group-hover:text-white transition-colors">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tapis Classiques</h3>
+                    <p class="text-slate-600 mb-4">Nettoyage en profondeur pour tapis synthétiques et laines courantes.</p>
+                    <a href="#" class="text-[#00B4D8] font-semibold flex items-center gap-2">En savoir plus <i data-lucide="arrow-right" class="w-4"></i></a>
+                </div>
+                <!-- Service 2 -->
+                <div class="glass-card p-8 hover:translate-y-[-10px] transition group border-2 border-[#00B4D8]/20" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-[#03045E] mb-6 group-hover:bg-[#03045E] group-hover:text-white transition-colors">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tapis de Luxe</h3>
+                    <p class="text-slate-600 mb-4">Traitement délicat pour tapis en soie et tapis artisanaux précieux.</p>
+                    <a href="#" class="text-[#00B4D8] font-semibold flex items-center gap-2">En savoir plus <i data-lucide="arrow-right" class="w-4"></i></a>
+                </div>
+                <!-- Service 3 -->
+                <div class="glass-card p-8 hover:translate-y-[-10px] transition group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-[#03045E] mb-6 group-hover:bg-[#03045E] group-hover:text-white transition-colors">
+                        <i data-lucide="factory"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Nettoyage Industriel</h3>
+                    <p class="text-slate-600 mb-4">Pour les grandes surfaces, bureaux et établissements hôteliers.</p>
+                    <a href="#" class="text-[#00B4D8] font-semibold flex items-center gap-2">En savoir plus <i data-lucide="arrow-right" class="w-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques -->
+    <section class="py-20 bg-[#03045E] text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 text-center">
+            <div data-aos="counter">
+                <p class="text-4xl font-bold mb-2">15,000+</p>
+                <p class="text-blue-300 uppercase text-sm tracking-widest">Tapis Lavés</p>
+            </div>
+            <div data-aos="counter">
+                <p class="text-4xl font-bold mb-2">98%</p>
+                <p class="text-blue-300 uppercase text-sm tracking-widest">Clients Heureux</p>
+            </div>
+            <div data-aos="counter">
+                <p class="text-4xl font-bold mb-2">12</p>
+                <p class="text-blue-300 uppercase text-sm tracking-widest">Experts Dédiés</p>
+            </div>
+            <div data-aos="counter">
+                <p class="text-4xl font-bold mb-2">24h</p>
+                <p class="text-blue-300 uppercase text-sm tracking-widest">Délai Express</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avant-Après (Simple Preview) -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-[#03045E] mb-4">Des Résultats Concrets</h2>
+            <p class="text-slate-500">Voyez la différence après notre passage.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
+                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=800" alt="Sale" class="w-full h-[400px] object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <span class="bg-red-500 text-white px-6 py-2 rounded-full font-bold">AVANT</span>
+                </div>
+            </div>
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
+                <img src="https://images.unsplash.com/photo-1558317374-067df5f15430?auto=format&fit=crop&q=80&w=800" alt="Propre" class="w-full h-[400px] object-cover">
+                <div class="absolute inset-0 bg-black/20 flex items-center justify-center border-4 border-[#00B4D8]">
+                    <span class="bg-[#00B4D8] text-white px-6 py-2 rounded-full font-bold uppercase tracking-widest">APRÈS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Zones -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto glass-card p-12 overflow-hidden flex flex-col md:flex-row items-center gap-12 border-none shadow-xl">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold text-[#03045E] mb-6">Zone de Livraison Gratuite</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex items-center gap-3 font-medium text-slate-700">
+                        <i data-lucide="map-pin" class="text-[#00B4D8]"></i> Hamria
+                    </div>
+                    <div class="flex items-center gap-3 font-medium text-slate-700">
+                        <i data-lucide="map-pin" class="text-[#00B4D8]"></i> Marjane
+                    </div>
+                    <div class="flex items-center gap-3 font-medium text-slate-700">
+                        <i data-lucide="map-pin" class="text-[#00B4D8]"></i> Mansour
+                    </div>
+                    <div class="flex items-center gap-3 font-medium text-slate-700">
+                        <i data-lucide="map-pin" class="text-[#00B4D8]"></i> Belle Vue
+                    </div>
+                    <div class="flex items-center gap-3 font-medium text-slate-700">
+                        <i data-lucide="map-pin" class="text-[#00B4D8]"></i> Plaisance
+                    </div>
+                    <div class="flex items-center gap-3 font-medium text-slate-700">
+                        <i data-lucide="map-pin" class="text-[#00B4D8]"></i> Bassatine
+                    </div>
+                </div>
+                <p class="mt-8 text-sm text-slate-400">Pour les zones rurales de Meknès, veuillez nous contacter pour un devis personnalisé.</p>
+            </div>
+            <div class="flex-1 w-full h-[300px] bg-slate-200 rounded-2xl flex items-center justify-center overflow-hidden">
+                <!-- Placeholder for Map -->
+                <div class="text-center p-8">
+                   <i data-lucide="map" class="w-12 h-12 mx-auto mb-4 text-[#03045E]"></i>
+                   <p class="font-bold text-[#03045E]">Meknès, Maroc</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 px-6 max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold text-[#03045E] text-center mb-12">Foire aux questions</h2>
+        <div class="space-y-4">
+            <details class="group glass-card overflow-hidden transition-all duration-300">
+                <summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-[#03045E] list-none">
+                    Combien de temps prend le nettoyage ?
+                    <i data-lucide="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <div class="px-6 pb-6 text-slate-600">
+                    Notre délai standard est de 24 à 48 heures selon le type de tapis et les conditions climatiques.
+                </div>
+            </details>
+            <details class="group glass-card overflow-hidden transition-all duration-300">
+                <summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-[#03045E] list-none">
+                    Utilisez-vous des produits chimiques ?
+                    <i data-lucide="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <div class="px-6 pb-6 text-slate-600">
+                    Nous utilisons exclusivement des détergents biodégradables et hypoallergéniques, sûrs pour les enfants et les animaux.
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto hero-gradient rounded-[3rem] p-12 text-center text-white relative overflow-hidden shadow-2xl">
+            <div class="relative z-10">
+                <h2 class="text-4xl font-bold mb-6">Prêt à transformer votre intérieur ?</h2>
+                <p class="text-xl mb-10 text-blue-100">Réservez votre ramassage en 2 minutes par téléphone ou WhatsApp.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <a href="#" class="bg-[#00B4D8] text-white px-10 py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-white hover:text-[#03045E] transition group">
+                        <i data-lucide="phone-call" class="group-hover:animate-bounce"></i> Appeler le 05 XX XX XX XX
+                    </a>
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-white rounded flex items-center justify-center text-[#03045E]">
+                        <i data-lucide="waves" class="w-5"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">Allo Pressing</span>
+                </div>
+                <p class="text-sm">Votre partenaire de confiance pour un foyer sain et des tapis impeccables à Meknès.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Navigation</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Accueil</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Nos Services</a></li>
+                    <li><a href="#faq" class="hover:text-white transition">Questions fréquentes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Légal</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Mentions légales</a></li>
+                    <li><a href="#" class="hover:text-white transition">Confidentialité</a></li>
+                    <li><a href="#" class="hover:text-white transition">CGV</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Suivez-nous</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#00B4D8] transition text-white"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#00B4D8] transition text-white"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-white/10 mt-16 pt-8 text-center text-xs">
+            &copy; 2026 Allo Pressing Meknès. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-quad'
+        });
+
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Smooth Scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
